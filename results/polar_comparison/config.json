@@ -1,0 +1,28 @@
+{
+  "data": "LSWMD.pkl",
+  "output": "results/polar_comparison",
+  "epochs": 20,
+  "patience": 5,
+  "batch_size": 64,
+  "seed": 42,
+  "none_cap": 5000,
+  "split": "lot",
+  "device": "auto",
+  "device_used": "mps",
+  "unlabeled_or_unknown_excluded": 638507,
+  "deduplicated_or_conflicting_removed": 100,
+  "classes": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Near-full",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "torch_version": "2.13.0",
+  "split_note": "Approximately 60/20/20. Lot grouping by default. Selected 5000 labeled none maps; prevalence is not production prevalence.",
+  "comparison_note": "Fusion has two encoders and more parameters; its gain is not proof that coordinates alone caused the gain."
+}

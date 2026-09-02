@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "epochs": 20,
+  "patience": 5,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "device": "mps",
+  "split_manifest": "/Users/jayl/Documents/GitHub/wafer-cnn/results/polar_comparison/split_manifest.csv",
+  "channels": [
+    "original 0/1/2 map",
+    "masked 5x5 failure density",
+    "masked 11x11 failure density"
+  ],
+  "notes": "Densities use resized 64x64 grid, not original physical die counts. No weights or augmentation. Two new variants differ only in pooling. Test reused from earlier exploration; this is not a new independent final test."
+}
